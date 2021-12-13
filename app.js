@@ -31,20 +31,3 @@ app.use(api, posts);
 
 // port
 app.listen(PORT, () => console.log(`Server running on port ${PORT}...`));
-
-////////////////////////////////////////////////////////////////////////////
-// const multer = require('multer');
-// const storage = multer.diskStorage({
-//     destination: (req, file, cb) => {
-//         cb(null, 'images');
-//     },
-//     filename: (req, file, cb) => {
-//         cb(null, req.body.name);
-//     },
-// });
-//
-// // multer routes
-// const upload = multer({storage: storage});
-// app.use(`${api}/upload`, upload.single('file'), (req, res) => {
-//     res.status(200).json('File has been uploaded.');
-// });
